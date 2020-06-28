@@ -87,6 +87,8 @@ def create_tf_example(group, path):
 
 
 def main(_):
+    if not os.path.exists('records'):
+        os.mkdir('records')
     writer = compat.python_io.TFRecordWriter(FLAGS.output_path)
     # change to "dataset/weapons/train" and "dataset/weapons/test" accordingly
     path = os.getcwd()
@@ -100,8 +102,6 @@ def main(_):
     output_path = os.path.join(os.getcwd(), FLAGS.output_path)
     print('Successfully created the TFRecords: {}'.format(output_path))
 
-    if not os.path.exists('records'):
-        os.mkdir('records')
     shutil.move(FLAGS.output_path, os.path.join('records', FLAGS.output_path))
 
 if __name__ == '__main__':
