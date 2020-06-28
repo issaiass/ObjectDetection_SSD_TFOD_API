@@ -12,5 +12,5 @@ with open(LABELS_FILE, 'w') as f:
 	for i, label in enumerate(labels):
          f.write('item {\n')
          f.write(f'    id:{i + 1}\n')
-         f.write(f'    name:'{label}'\n')
+         f.write(f'    name:\'{label}\'\n')
          f.write('}\n\n')
