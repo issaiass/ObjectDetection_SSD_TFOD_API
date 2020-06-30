@@ -12,4 +12,4 @@ This repository includes:
 
 - The Jetson Nano folder contains the results if you want to test it directly
 
-**NOTE: For deploymento on the Jetson you need to install tensorflow models and tensor flo to tensorrt from nvidia ai iot repository.  Instructions will be uploaded later but you could see the requirements.txt file for check.**
+**NOTE: For deployment on the Jetson you need to install tensorflow models and tensorflow to tensorrt from nvidia ai iot repository.  Instructions will be uploaded later but you could see the requirements.txt file for check.**
